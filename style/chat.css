@@ -1,0 +1,59 @@
+.outer {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(219, 201, 37)29%, rgb(28, 224, 93, 0.5)12%, rgb(60, 211, 211)56%);
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px blue;
+    padding: 5px;
+    border-style: solid solid dashed dashed;
+    /* animation: spinner 10s infinite linear; */
+ box-shadow: 5px 5px 50px rgb(20, 33, 212);
+
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px double red;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Croissant One', cursive;
+   
+}
+button:hover{
+    cursor:pointer;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Ole&display=swap');

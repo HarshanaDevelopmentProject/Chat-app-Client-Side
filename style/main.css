@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+
+
+}
+
+/* ************************************************************************************************************************************** */
+.chat-outer {
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    /* ******************************************************************************************************************************************* */
+}
+
+.header-outer {
+    position: fixed;
+    top: 0;
+}
+
+.header {
+    height: 90px;
+    border: 1px solid red;
+    background: linear-gradient(180deg, rgba(11, 235, 205, 0.8) 4%, rgba(148, 94, 235, 0.7)53%);
+    margin-top: 0px;
+}
+
+.main-title {
+    font-size: 50px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: red;
+    text-shadow: green 5px 5px 5px;
+    border: aqua;
+    font-weight: bold;
+    text-shadow: 10px red;
+}
+
+/* ******************************************************************************************************************************************** */
+.user-box {
+
+    height: 80px;
+    border: 1px solid red;
+    display: flex;
+
+}
+
+.user-box-common {
+    height: 100%;
+    border: 2px solid rgb(4, 65, 27);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(211, 106, 197, 0.404);
+
+}
+
+.group-icon {
+    font-size: 50px !important;
+}
+
+.user-count {
+
+    width: 200px;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+    padding: 10px 0 0 0;
+
+}
+
+.u-number {
+    width: 80px;
+    height: 35px;
+    border-radius: 30%;
+    background-color: aqua;
+    margin: 10px 0 0 9px;
+}
+
+.date {
+    width: 300px;
+    height: 100%;
+    border: 1px solid red;
+    margin: 0;
+}
+
+.display-date-time {
+    display: flex;
+}
+
+.date-time-message {
+    margin-left: 10px;
+}
+
+.disconnect-btn {
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    color: rgb(125, 223, 146) !important;
+    border-radius: 0;
+    font-family: 'Croissant One', cursive;
+    background: linear-gradient(180deg, rgb(209, 13, 13)10%, rgb(150, 147, 11)53%, rgba(104, 12, 180, 0.664)0%);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.disconnect-btn:hover {
+    cursor: pointer;
+    border: 3px solid rgb(56, 6, 6) !important;
+}
+
+
+/* ******************************************************************************************************************************************** */
+
+.chat-outlet {
+
+    height: 380px;
+    border: 11px double red;
+    box-shadow: 5px 5px 1005px #b70808;
+    margin: 100px 0 0 0;
+    background-image: url("https://img.freepik.com/free-vector/vector-bright-watercolor-stains_2065-176.jpg?size=626&ext=jpg&ga=GA1.1.2081802722.1694067941&semt=ais");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+
+}
+
+.message-list{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    list-style: square;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* *********************************************************************************************************************************************** */
+
+.input-outlet {
+
+    display: flex;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+
+}
+
+input {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.send-btn {
+    background-color: rgba(138, 169, 234, 0.5);
+    height: 65px;
+    margin: 0 0 0 15px;
+    border: none;
+    animation: sendButton infinite 2s linear;
+}
+
+button:hover {
+    transition-duration: 1s;
+
+    background-color: rgba(53, 53, 220, 0.82);
+}
+
+.message-outlet {
+    width: 100%;
+    height: 300px;
+    border: 1px solid green;
+    margin-top: 100px;
+
+}
+
+.message-loader {
+    border: 1px solid yellow;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* *********************************************************responcive***************************************************************************************** */
+
+
+@media (min-width: 568px) and (max-width: 767px) {
+    .group-icon {
+        font-size: 50px !important;
+        margin-top: 4px;
+    }
+
+    .u-number {
+        width: 70px;
+        height: 40px;
+        margin: 10px 0 0 9px;
+    }
+
+    .date-time-icon {
+        font-size: 30px !important;
+    }
+
+    .date {
+        padding: 10px 0 0 0;
+    }
+
+    .date-time-message {
+        font-size: 25px;
+        margin: 0 0 0 5px;
+    }
+
+    .disconnect-btn {
+        width: 200px;
+        height: 70%;
+    }
+
+}
+
+
+@media (min-width: 414px) and (max-width: 567px) {
+    .main-title {
+        font-size: 43px;
+    }
+
+    .group-icon {
+        font-size: 50px !important;
+        margin-top: 10px;
+    }
+
+    .u-number {
+        width: 60px;
+        height: 30px;
+
+
+        margin: 20px 0 0 6px;
+    }
+
+    .date-time-icon {
+        font-size: 25px !important;
+    }
+
+    .date {
+        padding: 10px 0 0 0;
+    }
+
+    .date-time-message {
+        font-size: 18px;
+        margin: 0 0 0 5px;
+    }
+
+    .disconnect-btn {
+        width: 200px;
+        height: 60%;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 375px) and (max-width: 413px) {
+    .main-title {
+        font-size: 40px;
+    }
+
+    .group-icon {
+        font-size: 50px !important;
+        margin-top: 0px;
+    }
+
+    .u-number {
+        width: 60px;
+        height: 30px;
+        margin: 10px 0 0 6px;
+    }
+
+    .date {
+        padding: 10px 0 0 0;
+    }
+
+    .date-time-message {
+        font-size: 15px;
+        margin: 0 0 0 5px;
+    }
+
+    .disconnect-btn {
+        width: 200px;
+        height: 60%;
+    }
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .main-title {
+        font-size: 35px;
+    }
+
+    .group-icon {
+        font-size: 80px;
+        margin-top: 0px;
+    }
+
+    .u-number {
+        width: 40px;
+        height: 25px;
+        margin: 14px 0 0 6px;
+    }
+
+    .date {
+        padding: 15px 0 0 0;
+    }
+
+    .date-time-message {
+        font-size: 13px;
+        margin: 0 0 0 5px;
+    }
+
+    .disconnect-btn {
+        width: 200px;
+        height: 50%;
+    }
+
+
+}
+
+
+@media (max-width: 319px) {
+
+    .main-title {
+        font-size: 34px;
+    }
+
+    .group-icon {
+        font-size: 80px;
+        margin-top: 0px;
+    }
+
+    .u-number {
+        width: 40px;
+        height: 20px;
+
+
+        margin: 19px 0 0 6px;
+    }
+
+    .date {
+        padding: 10px 0 0 0;
+    }
+
+    .date-time-message {
+        font-size: 13px;
+        margin: 0 0 0 5px;
+    }
+
+    .disconnect-btn {
+        width: 200px;
+        height: 50%;
+    }
+
+}
+
+/* **************************************************************animation********************************************************************************* */
+@keyframes sendButton {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+

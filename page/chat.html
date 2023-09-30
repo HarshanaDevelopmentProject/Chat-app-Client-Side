@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="icon" href="https://img.icons8.com/?size=80&id=qXin8dFXNXBX&format=png">
+    <title>Chat App | Client</title>
+</head>
+
+<body>
+    <div class="chat-outer">
+
+        <div class="header-outer col-12">
+            <div class="header col-12">
+                <h1 class="main-title" style="text-align: center">Chat App Demo....</h1>
+            </div>
+
+            <div class="user-box col-12">
+                <div class="user-counter-box user-box-common col col-4">
+                    <div class="user-count">
+                        <!-- <img src="https://img.icons8.com/?size=48&id=TSNPQ4jsav1-&format=png" alt=""> -->
+                        <span class="material-symbols-outlined group-icon">group</span>
+                        <div class="u-number" style="text-align: center;">5</div>
+                    </div>
+                </div>
+                <div class="date-time-box user-box-common col col-4">
+                    <div class="date">
+                        <div class="display-date-time">
+                            <span class="material-symbols-outlined date-time-icon"> calendar_month</span>
+                            <h3 class="date-time-message" id="date">2023/04/29</h3>
+                        </div>
+
+                        <div class="display-date-time">
+                            <span class="material-symbols-outlined date-time-icon">schedule</span>
+                            <h3 class="date-time-message" id="time">21:03:56</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="disconnect-btn-box user-box-common col col-4">
+                    <button class="disconnect-btn btn btn-danger" id="disconnect-btn">Disconnect</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="chat-outlet col-6">
+         
+         <ul id="message-list" class="message-list">
+            
+         </ul>
+        </div>
+
+        <div class="input-outlet col-10">
+            <input type="text" id="send-message" placeholder="type your message!!">
+            <button class="send-btn" id="send-btn"><img src="https://img.icons8.com/?size=64&id=6o1iSe4Jkbsv&format=png"
+                    alt="Send-logo" srcset=""></button>
+        </div>
+
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
