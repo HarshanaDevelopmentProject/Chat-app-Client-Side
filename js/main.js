@@ -39,8 +39,8 @@ server.addEventListener('message', (message) => {
 });
 server.addEventListener('close',()=>{
     alert("Connection Failed.......Try Again!!!");
-    location.href='../index.html'
+    location.href='https://harshanadevelopmentproject.github.io/Chat-app-Client-Side/'
 });
 
 
-$('#disconnect-btn').click(() => { window.location.href = '../index.html' });
+$('#disconnect-btn').click(() => { window.location.href = 'https://harshanadevelopmentproject.github.io/Chat-app-Client-Side/' });
